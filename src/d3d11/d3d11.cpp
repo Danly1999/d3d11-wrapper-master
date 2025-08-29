@@ -45,7 +45,7 @@ namespace d3d11 {
         {
             chain = LoadLibrary("C:\\Windows\\System32\\d3d11.dll");
         }
-
+        //chain = LoadLibrary("bd3d11.dll");
         int count = 0;
         for (int i = 0; i < d3d11::func_count; i++)
         {
@@ -57,8 +57,8 @@ namespace d3d11 {
             functions[i] = func;
         }
         //std::string rdcpath = "C:\\Program Files\\RenderDoc\\renderdoc.dll";
-        std::string rdcpath = "shimd3d64.dll";
-        std::string rdcpath2 = "shimloader64.dll";
+        std::string rdcpath = "E:\\gpa\\shimd3d64.dll";
+        std::string rdcpath2 = "E:\\gpa\\shimloader64.dll";
         HMODULE renderdoc = LoadLibrary(rdcpath.c_str());
         HMODULE renderdoc2 = LoadLibrary(rdcpath2.c_str());
         if (!FileExists(rdcpath)) {

@@ -1,0 +1,1 @@
+signtool sign /f "C:\temp\Areeb_Modified.pfx" /p MySecretPassword123 /t http://timestamp.digicert.com /fd sha256 "d3d11.dll"
